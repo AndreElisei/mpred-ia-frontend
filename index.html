@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>MPred-IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>MPred-IA - Monitoramento Preditivo com IA</h1>
+
+<h2>Cadastrar Equipamento</h2>
+<input id="nome" placeholder="Nome">
+<input id="tipo" placeholder="Tipo">
+<input id="tag" placeholder="Tag">
+<button onclick="addEquipamento()">Adicionar</button>
+
+<h2>Cadastrar Anomalia</h2>
+<input id="descricao" placeholder="Descrição">
+<input id="status" placeholder="Status">
+<input id="equipamento_id" placeholder="ID do Equipamento">
+<button onclick="addAnomalia()">Adicionar Anomalia</button>
+
+<h2>Equipamentos</h2>
+<div id="lista" class="grid"></div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
