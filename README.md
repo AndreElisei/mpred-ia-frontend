@@ -1,4 +1,4 @@
-# MPred-IA Frontend
+# MPred-IA - Frontend
 
 ## 📌 Descrição
 
@@ -10,31 +10,31 @@ Permite cadastrar equipamentos, registrar anomalias e visualizar os dados em tem
 
 ## 🚀 Tecnologias utilizadas
 
-* HTML
-* CSS
-* JavaScript (Vanilla JS)
+- HTML
+- CSS
+- JavaScript (Vanilla JS)
 
 ---
 
 ## ⚙️ Funcionalidades
 
-* Cadastro de equipamentos
-* Cadastro de anomalias
-* Listagem de equipamentos em formato de cards
-* Exibição de anomalias
-* Remoção de equipamentos
-* Integração com API backend
+- Cadastro de equipamentos
+- Cadastro de anomalias
+- Listagem de equipamentos em formato de cards
+- Exibição de anomalias
+- Remoção de equipamentos
+- Integração com API backend
 
 ---
 
 ## 📂 Estrutura do projeto
 
-```
+
 frontend/
 │── index.html
 │── styles.css
 │── scripts.js
-```
+
 
 ---
 
@@ -42,9 +42,9 @@ frontend/
 
 Basta abrir o arquivo:
 
-```
+
 index.html
-```
+
 
 no navegador.
 
@@ -56,11 +56,33 @@ no navegador.
 
 A aplicação consome a API rodando em:
 
-```
+
 http://127.0.0.1:5000
-```
+
 
 Certifique-se de que o backend esteja em execução.
+
+---
+
+## 🧭 Como usar
+
+1. Cadastre um equipamento
+2. Informe o ID para cadastrar uma anomalia
+3. Visualize os equipamentos em cards
+4. Veja as anomalias associadas
+5. Remova equipamentos com o botão "Deletar"
+
+---
+
+## 🖥️ Interface
+
+A aplicação apresenta:
+
+- Layout em cards
+- Interface simples e intuitiva
+- Atualização automática após ações
+
+💡 (Sugestão: adicione um print da tela aqui para deixar mais profissional)
 
 ---
 
