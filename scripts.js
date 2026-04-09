@@ -5,24 +5,31 @@ const getEquipamentos = async () => {
     try {
         let response = await fetch(`${url}/equipamentos`);
         let data = await response.json();
+
         let lista = document.getElementById("lista");
         lista.innerHTML = "";
+
         data.equipamentos.forEach(e => {
             let card = document.createElement("div");
             card.className = "card";
+
             card.innerHTML = `
-                <h3>${e.nome}</h3>
+                <h3>ID: ${e.id} - ${e.nome}</h3>
                 <p><b>Tipo:</b> ${e.tipo}</p>
                 <p><b>Tag:</b> ${e.tag}</p>
-                <p><b>Anomalias:</b> ${
-                    e.anomalias.length > 0
-                        ? e.anomalias.map(a => a.descricao).join(", ")
+                <p><b>Anomalias:</b><br>
+                    ${
+                        e.anomalias.length > 0
+                        ? e.anomalias.map(a => `${a.descricao} - ${a.status}`).join("<br>")
                         : "Nenhuma"
-                }</p>
+                    }
+                </p>
                 <button onclick="deleteEquipamento(${e.id})">🗑️ Deletar</button>
             `;
+
             lista.appendChild(card);
         });
+
     } catch (error) {
         console.error("Erro ao carregar equipamentos:", error);
     }
