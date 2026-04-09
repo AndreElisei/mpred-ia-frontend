@@ -82,8 +82,6 @@ A aplicação apresenta:
 * Interface simples e intuitiva
 * Atualização automática após ações
 
-💡 (Sugestão: adicione um print da tela do sistema aqui para deixar ainda mais profissional)
-
 ---
 
 ## 📌 Observações
